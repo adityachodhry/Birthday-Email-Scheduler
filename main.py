@@ -108,7 +108,7 @@ def main():
 # Schedule the Job
 # ------------------------
 # Set the time you want the script to run daily, e.g., "09:00"
-schedule.every().day.at("11:52").do(main)
+schedule.every().day.at("12:02").do(main)
 
 print("🎉 Birthday Email Scheduler started...")
 while True:
