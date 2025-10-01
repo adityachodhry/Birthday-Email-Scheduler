@@ -23,9 +23,6 @@ SENDER_PASSWORD = "ldpq yrck kgyz hdxc"
 COMPANY_DOMAIN = "isalogistics.in"
 GREETING_IMAGE_PATH = 'Final.PNG'
 
-# ------------------------
-# Fetch Customer Data
-# ------------------------
 def get_customer_birthdays():
     conn = mysql.connector.connect(**db_config)
     query = """
