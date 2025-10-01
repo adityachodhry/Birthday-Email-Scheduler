@@ -8,6 +8,9 @@ from email.mime.image import MIMEImage
 import schedule
 import time
 
+# ------------------------
+# Database Configuration
+# ------------------------
 db_config = {
     'user': 'isa_user',
     'password': '4-]8sd51D£A6',
@@ -16,6 +19,9 @@ db_config = {
     'port': 3306
 }
 
+# ------------------------
+# Email Configuration
+# ------------------------
 SMTP_SERVER = "smtp.gmail.com"
 SMTP_PORT = 587
 SENDER_EMAIL = "aditya.choudhary@isalogistics.in"
@@ -23,6 +29,9 @@ SENDER_PASSWORD = "ldpq yrck kgyz hdxc"
 COMPANY_DOMAIN = "isalogistics.in"
 GREETING_IMAGE_PATH = 'Final.PNG'
 
+# ------------------------
+# Fetch Customer Data
+# ------------------------
 def get_customer_birthdays():
     conn = mysql.connector.connect(**db_config)
     query = """
@@ -33,6 +42,9 @@ def get_customer_birthdays():
     conn.close()
     return df
 
+# ------------------------
+# Send Birthday Email
+# ------------------------
 def send_birthday_email(customer_name, recipient_email, image_path=GREETING_IMAGE_PATH):
     try:
         msg = MIMEMultipart('related')
