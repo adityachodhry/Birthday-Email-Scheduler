@@ -8,9 +8,6 @@ from email.mime.image import MIMEImage
 import schedule
 import time
 
-# ------------------------
-# Database Configuration
-# ------------------------
 db_config = {
     'user': 'isa_user',
     'password': '4-]8sd51D£A6',
@@ -19,9 +16,6 @@ db_config = {
     'port': 3306
 }
 
-# ------------------------
-# Email Configuration
-# ------------------------
 SMTP_SERVER = "smtp.gmail.com"
 SMTP_PORT = 587
 SENDER_EMAIL = "aditya.choudhary@isalogistics.in"
