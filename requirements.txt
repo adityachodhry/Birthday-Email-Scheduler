@@ -1,0 +1,23 @@
+# Core libraries
+pandas
+numpy
+requests
+dnspython
+schedule
+
+# Backend & deployment
+flask
+gunicorn
+
+# Email handling
+yagmail
+oauth2client
+
+# Database
+mysql-connector-python
+
+# Date/time utilities
+python-dateutil
+
+# Standard email libraries (used by Python, no need to install separately)
+# email, smtplib, MIMEText, MIMEMultipart, MIMEImage
