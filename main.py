@@ -33,9 +33,6 @@ def get_customer_birthdays():
     conn.close()
     return df
 
-# ------------------------
-# Send Birthday Email
-# ------------------------
 def send_birthday_email(customer_name, recipient_email, image_path=GREETING_IMAGE_PATH):
     try:
         msg = MIMEMultipart('related')
